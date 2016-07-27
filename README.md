@@ -19,7 +19,7 @@ To use this plugin in your REPL, include it like so:
 
 ```
 > var shell = require('shelljs');
-> shell.cat('file1.txt');
+> shell.cat('file1.txt'); // Without this plugin, things can get nasty!
 { [String: 'These are the file contents\nAnd they\'re printed out nicely!\n']
   stdout:'These are the file contents\nAnd they\'re printed out nicely!\n',
   stderr: null,
