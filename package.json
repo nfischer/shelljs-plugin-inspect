@@ -1,0 +1,38 @@
+{
+  "name": "shelljs-plugin-inspect",
+  "version": "0.1.0",
+  "description": "Add a .inspect method to ShellJS objects for REPL use",
+  "main": "index.js",
+  "scripts": {
+    "posttest": "npm run lint",
+    "test": "mocha",
+    "lint": "eslint .",
+    "changelog": "shelljs-changelog",
+    "release:major": "shelljs-release major",
+    "release:minor": "shelljs-release minor",
+    "release:patch": "shelljs-release patch"
+  },
+  "keywords": [
+    "shelljs",
+    "REPL",
+    "inspect",
+    "method",
+    "plugin",
+    "n_shell"
+  ],
+  "author": "Nate Fischer <ntfschr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb-base": "^4.0.2",
+    "eslint-plugin-import": "^1.11.1",
+    "mocha": "^2.5.3",
+    "shelljs": "github:shelljs/shelljs",
+    "shelljs-changelog": "^0.2.2",
+    "shelljs-release": "^0.2.0",
+    "should": "^10.0.0"
+  },
+  "peerDependencies": {
+    "shelljs": "github:shelljs/shelljs"
+  }
+}

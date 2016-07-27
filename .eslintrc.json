@@ -1,0 +1,21 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": "airbnb-base/legacy",
+  "rules": {
+    "comma-dangle": 0,
+    "global-require": 0,
+    "vars-on-top": 0,
+    "spaced-comment": [2, "always", { "markers": ["@", "@include"], "exceptions": ["@"] }],
+    "no-param-reassign": 0,
+    "no-console": 0,
+    "curly": 0,
+    "func-names": 0,
+    "new-cap": [2, {
+      "capIsNewExceptions": [
+        "ShellString"
+      ]}
+    ]
+  }
+}
