@@ -20,8 +20,15 @@
     "plugin",
     "n_shell"
   ],
-  "author": "Nate Fischer <ntfschr@gmail.com>",
+  "author": "Nate Fischer <ntfschr@gmail.com> (https://github.com/nfischer)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nfischer/shelljs-plugin-inspect.git"
+  },
   "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "eslint": "^3.1.1",
     "eslint-config-airbnb-base": "^4.0.2",
