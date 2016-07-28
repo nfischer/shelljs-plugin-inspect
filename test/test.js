@@ -48,6 +48,11 @@ describe('plugin-inspect', function () {
     ret.inspect().should.equal(fs.readFileSync('index.js', 'utf-8'));
   });
 
+  it.skip('works for commands with no trailing newline', function () {
+    var ret = shell.pwd();
+    ret.inspect().should.equal(process.cwd() + '\n');
+  });
+
   it('works for arrays', function () {
     var ret = shell.cat('index.js');
     ret.inspect().should.equal(fs.readFileSync('index.js', 'utf-8'));
