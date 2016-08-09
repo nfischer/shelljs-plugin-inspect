@@ -4,8 +4,8 @@
 [![AppVeyor](https://img.shields.io/appveyor/ci/shelljs/shelljs-plugin-inspect/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/shelljs/shelljs-plugin-inspect/branch/master)
 [![npm](https://img.shields.io/npm/v/shelljs-plugin-inspect.svg?style=flat-square)](https://www.npmjs.com/package/shelljs-plugin-inspect)
 
-A [ShellJS](https://github.com/shelljs/shelljs) plugin to `.inspect()` methods
-for REPL use.
+A [ShellJS](https://github.com/shelljs/shelljs) plugin to add `.inspect()`
+methods for REPL use.
 
 ## Installation
 
