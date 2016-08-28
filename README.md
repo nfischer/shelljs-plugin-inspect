@@ -3,6 +3,7 @@
 [![Travis](https://img.shields.io/travis/nfischer/shelljs-plugin-inspect/master.svg?style=flat-square&label=unix)](https://travis-ci.org/nfischer/shelljs-plugin-inspect)
 [![AppVeyor](https://img.shields.io/appveyor/ci/shelljs/shelljs-plugin-inspect/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/shelljs/shelljs-plugin-inspect/branch/master)
 [![npm](https://img.shields.io/npm/v/shelljs-plugin-inspect.svg?style=flat-square)](https://www.npmjs.com/package/shelljs-plugin-inspect)
+[![shelljs-plugin](https://img.shields.io/badge/shelljs-plugin-brightgreen.svg?style=flat-square)](https://github.com/shelljs/shelljs/wiki/Using-ShellJS-Plugins)
 
 A [ShellJS](https://github.com/shelljs/shelljs) plugin to add `.inspect()`
 methods for REPL use.
