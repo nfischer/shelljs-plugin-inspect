@@ -17,11 +17,12 @@ $ npm install --save shelljs-plugin-inspect
 
 ## Usage
 
-To use this plugin in your REPL, include it like so:
+Use this plugin in a Node REPL like so:
 
-```
-> var shell = require('shelljs');
-> shell.cat('file1.txt'); // Without this plugin, things can get nasty!
+Without this plugin:
+
+```javascript
+> shell.cat('file1.txt'); // Yuck!
 { [String: 'These are the file contents\nAnd they\'re printed out nicely!\n']
   stdout:'These are the file contents\nAnd they\'re printed out nicely!\n',
   stderr: null,
@@ -36,18 +37,28 @@ To use this plugin in your REPL, include it like so:
   uniq: [Function: bound ],
   grep: [Function: bound ],
   exec: [Function: bound ] }
+```
+
+After:
+
+```
 > require('shelljs-plugin-inspect');
-{}
-> shell.cat('file.txt'); // Now things will actually be printed nicely
+> shell.cat('file.txt');
 These are the file contents
 And they're printed out nicely!
 
->
+> shell.ls();
+file.txt
+otherfile.txt
+...
+
+> shell.pwd();
+path/to/current/directory
 ```
 
-## Writing plugins
+## Writing ShellJS plugins
 
-If you're interested in taking a look at the current state of the plugin API,
-take a look at [index.js](index.js). This has helpful comments explaining the
-necessary boilerplate for writing a plugin. For an example usage of the plugin,
-take a look at [test/test.js](test/test.js).
+If you're interested in taking a look at the current state of the ShellJS plugin
+API, take a look at [index.js](index.js). This has helpful comments explaining
+the necessary boilerplate for writing a plugin. For an example usage of the
+plugin, take a look at [test/test.js](test/test.js).
