@@ -1,6 +1,6 @@
 {
   "name": "shelljs-plugin-inspect",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Add a .inspect method to ShellJS objects for REPL use",
   "main": "index.js",
   "scripts": {
