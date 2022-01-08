@@ -41,5 +41,8 @@
   },
   "peerDependencies": {
     "shelljs": "^0.8.1"
+  },
+  "engines": {
+    "node": ">=4"
   }
 }
