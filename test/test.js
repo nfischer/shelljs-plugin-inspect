@@ -5,8 +5,12 @@ var pluginInspect = require('..');
 
 var shell = require('shelljs'); // recommended
 var fs = require('fs');
+var util = require('util');
 
 require('should');
+
+// Newer versions of node use a symbol called util.inspect.custom.
+var inspectAttribute = util.inspect.custom || 'inspect';
 
 // override console.error() to cover up common.error() calls
 console.error = function () { };
@@ -14,6 +18,7 @@ console.error = function () { };
 describe('plugin-inspect', function () {
   it('does not get added to the shelljs instance', function () {
     shell.should.not.have.property('inspect');
+    shell.should.not.have.property(util.inspect.custom);
   });
 
   it('does not override other commands or methods', function () {
@@ -40,38 +45,38 @@ describe('plugin-inspect', function () {
      * Plugins can be methods on ShellStrings
      */
     var ret = shell.ls();
-    ret.inspect.should.be.type('function');
+    ret[inspectAttribute].should.be.type('function');
   });
 
   it('works for strings', function () {
     var ret = shell.cat('index.js');
-    ret.inspect().should.equal(fs.readFileSync('index.js', 'utf-8'));
+    ret[inspectAttribute]().should.equal(fs.readFileSync('index.js', 'utf-8'));
   });
 
   it.skip('works for commands with no trailing newline', function () {
     var ret = shell.pwd();
-    ret.inspect().should.equal(process.cwd() + '\n');
+    ret[inspectAttribute]().should.equal(process.cwd() + '\n');
   });
 
   it('works for arrays', function () {
     var ret = shell.cat('index.js');
-    ret.inspect().should.equal(fs.readFileSync('index.js', 'utf-8'));
+    ret[inspectAttribute]().should.equal(fs.readFileSync('index.js', 'utf-8'));
   });
 
   it('gets applied directly to ShellStrings', function () {
     var ret = new shell.ShellString('Hello world');
-    ret.inspect().should.be.type('string');
-    ret.inspect().should.equal('Hello world');
+    ret[inspectAttribute]().should.be.type('string');
+    ret[inspectAttribute]().should.equal('Hello world');
   });
 
   it('works for piped commands', function () {
     var ret = shell.cat('index.js').grep('o');
-    ret.inspect().should.equal(shell.grep('o', 'index.js').toString());
+    ret[inspectAttribute]().should.equal(shell.grep('o', 'index.js').toString());
   });
 
   it('works for commands that have errors', function () {
     var ret = shell.rm('fakeFileName.txt');
-    ret.inspect().should.equal('');
+    ret[inspectAttribute]().should.equal('');
   });
 
   it('does not break non-ShellString commands', function () {
