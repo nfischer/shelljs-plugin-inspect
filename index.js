@@ -16,4 +16,6 @@ plugin.register(inspectAttribute, inspect, {
   wrapOutput: false,
 });
 
-exports.inspect = inspect;
+// Note: this must not be named 'exports.inspect' otherwise this will trigger
+// the deprecation warning!
+exports.customInspect = inspect;
