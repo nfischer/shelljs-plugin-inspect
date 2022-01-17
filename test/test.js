@@ -37,7 +37,7 @@ describe('plugin-inspect', function () {
      * A plugin author can also export the implementation of their commands
      */
     pluginInspect.should.be.type('object');
-    pluginInspect.inspect.should.be.type('function');
+    pluginInspect.customInspect.should.be.type('function');
   });
 
   it('gets added as a method on ShellStrings', function () {
