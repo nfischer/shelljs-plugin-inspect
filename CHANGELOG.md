@@ -1,8 +1,28 @@
 # Change Log
 
-## [Unreleased](https://github.com/nfischer/shelljs-plugin-inspect/tree/HEAD)
+## [v0.3.0](https://github.com/nfischer/shelljs-plugin-inspect/tree/v0.3.0) (2022-01-18)
+[Full Changelog](https://github.com/nfischer/shelljs-plugin-inspect/compare/v0.2.1...v0.3.0)
 
-[Full Changelog](https://github.com/nfischer/shelljs-plugin-inspect/compare/v0.2.0...HEAD)
+**Fixed bugs:**
+
+- fix: rename export attribute for deprecation [\#14](https://github.com/nfischer/shelljs-plugin-inspect/pull/14) ([nfischer](https://github.com/nfischer))
+
+**Closed issues:**
+
+- Migrate to "util.inspect.custom" for compat with newer Node versions [\#9](https://github.com/nfischer/shelljs-plugin-inspect/issues/9)
+
+**Merged pull requests:**
+
+- doc: generalize the docs in README [\#15](https://github.com/nfischer/shelljs-plugin-inspect/pull/15) ([nfischer](https://github.com/nfischer))
+- chore: rename master -\> main [\#13](https://github.com/nfischer/shelljs-plugin-inspect/pull/13) ([nfischer](https://github.com/nfischer))
+- test: change how we assert inspection [\#12](https://github.com/nfischer/shelljs-plugin-inspect/pull/12) ([nfischer](https://github.com/nfischer))
+
+## [v0.2.1](https://github.com/nfischer/shelljs-plugin-inspect/tree/v0.2.1) (2022-01-14)
+[Full Changelog](https://github.com/nfischer/shelljs-plugin-inspect/compare/v0.2.0...v0.2.1)
+
+**Fixed bugs:**
+
+- fix: prefer util.inspect.custom over .inspect [\#11](https://github.com/nfischer/shelljs-plugin-inspect/pull/11) ([nfischer](https://github.com/nfischer))
 
 **Merged pull requests:**
 
