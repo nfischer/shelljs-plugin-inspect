@@ -1,6 +1,6 @@
 # shelljs-plugin-inspect
 
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fnfischer%2Fshelljs-plugin-inspect%2Fbadge%3Fref%3Dmain&style=flat-square)](https://actions-badge.atrox.dev/nfischer/shelljs-plugin-inspect/goto?ref=main)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/nfischer/shelljs-plugin-inspect/main.yml?style=flat-square&logo=github)](https://github.com/nfischer/shelljs-plugin-inspect/actions/workflows/main.yml)
 [![npm](https://img.shields.io/npm/v/shelljs-plugin-inspect.svg?style=flat-square)](https://www.npmjs.com/package/shelljs-plugin-inspect)
 [![shelljs-plugin](https://img.shields.io/badge/shelljs-plugin-brightgreen.svg?style=flat-square)](https://github.com/shelljs/shelljs/wiki/Using-ShellJS-Plugins)
 
