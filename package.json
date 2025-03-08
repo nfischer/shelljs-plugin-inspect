@@ -6,7 +6,6 @@
   "scripts": {
     "posttest": "npm run lint",
     "test": "mocha",
-    "test-without-lint": "mocha",
     "lint": "eslint .",
     "changelog": "shelljs-changelog",
     "release:major": "shelljs-release major",
@@ -35,15 +34,15 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
     "mocha": "^5.2.0",
-    "shelljs": "^0.8.5",
+    "shelljs": "^0.9.1",
     "shelljs-changelog": "^0.2.6",
     "shelljs-release": "^0.5.2",
     "should": "^13.2.3"
   },
   "peerDependencies": {
-    "shelljs": "^0.8.5"
+    "shelljs": "^0.9.1"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=18"
   }
 }
